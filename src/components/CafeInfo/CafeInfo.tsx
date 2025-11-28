@@ -1,5 +1,4 @@
 import css from "./CafeInfo.module.css";
-import { useState } from "react";
 
 function CareInfo() {
   return (
