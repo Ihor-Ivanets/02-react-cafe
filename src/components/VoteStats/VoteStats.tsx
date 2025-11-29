@@ -1,12 +1,13 @@
 import styles from "./VoteStats.module.css";
+import type { Votes } from "../../types/votes";
 
 interface VoteStatsProps {
-  votes: { good: number; neutral: number; bad: number };
+  votes: Votes;
   totalVotes: number;
   positiveRate: number;
 }
 
-function VoteStas({ votes, totalVotes, positiveRate }: VoteStatsProps) {
+function VoteStats({ votes, totalVotes, positiveRate }: VoteStatsProps) {
   console.log(votes);
 
   return (
@@ -30,4 +31,4 @@ function VoteStas({ votes, totalVotes, positiveRate }: VoteStatsProps) {
   );
 }
 
-export default VoteStas;
+export default VoteStats;

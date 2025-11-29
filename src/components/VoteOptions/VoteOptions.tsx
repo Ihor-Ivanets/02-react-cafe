@@ -34,7 +34,7 @@ function VoteOptions({ onVote, onReset, canReset }: VoteOptionsProps) {
       >
         Bad
       </button>
-      {!!canReset && (
+      {canReset && (
         <button onClick={onReset} className={`${css.button} ${css.reset}`}>
           Reset
         </button>
